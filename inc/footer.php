@@ -12,12 +12,31 @@
         </button>
       </div>
       <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-        <button type="button" class="btn btn-info">Logar</button>
-      </div>
+        <form action="" method="post">
+
+          <div class="form-group">
+            <label for="email">email</label>
+            <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Insira seu email">
+            <small id="emailHelp" class="form-text text-muted">Não se preocupe, não vendemos mailing lists.</small>
+          </div>
+          <div class="form-group">
+            <label for="senha">Password</label>
+            <input type="password" class="form-control" id="senha" placeholder="Insira sua senha" aria-describedby="passwordHelp">
+            <small id="passwordHelp" class="form-text text-muted">Insira uma maiúscula, uma minúscula e um número pelo menos.</small>
+          </div>
+          <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="aceite">
+            <label class="form-check-label" for="aceite">Estou de acordo com os termos, pode vender meus dados!</label>
+          </div>
+          </form>
+          <small class="d-block w-100 text-muted">Ops! Ainda não tenho conta, quero <a href="cadastro.php" class="text-info">me cadastrar</a>.</small>
+        </div>
+        <div class="modal-footer">
+          <button type="reset" class="btn btn-secondary">Limpar</button>
+          <button type="submit" class="btn btn-info">Logar</button>
+          
+        </div>
+      
     </div>
   </div>
 </div>
