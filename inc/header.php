@@ -20,6 +20,9 @@
                         <a class="nav-link" href="#">Contato</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="#">Login</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link disabled" href="#">Em breve, novidades...</a>
                     </li>
                 </ul>
