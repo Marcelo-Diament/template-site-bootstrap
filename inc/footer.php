@@ -1,5 +1,18 @@
-<footer>
-
+<footer class="container-fluid bg-dark text-white mt-4 p-3">
+  <div class="row">
+    <section class="col-12 col-md-6">
+      <ul style="list-style:none;padding:0;margin:0">
+        <li><a class="text-white" style="text-decoration:none;" href="mailto:fulano@fulanitos.com">fulano@fulanitos.com</a></li>
+        <li><a class="text-white" style="text-decoration:none;" href="tel:+5511987654321">11 987 654 321</a></li>
+      </ul>
+    </section>
+    <section class="col-12 col-md-6">
+      <ul style="list-style:none;padding:0;margin:0">
+        <li>Avenida Brasil, 4200 - CEP 01234-567</li>
+        <li>Fulanos &copy; | CNPJ 01.012.012/0001-99</li>
+      </ul>
+    </section>
+  </div>
 </footer>
 <!-- Modal Login -->
 <div class="modal fade" id="modalLogin" tabindex="-1" role="dialog" aria-labelledby="modalLoginLabel" aria-hidden="true">
@@ -13,7 +26,6 @@
       </div>
       <div class="modal-body">
         <form action="" method="post">
-
           <div class="form-group">
             <label for="email">email</label>
             <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Insira seu email">
@@ -28,15 +40,13 @@
             <input type="checkbox" class="form-check-input" id="aceite">
             <label class="form-check-label" for="aceite">Estou de acordo com os termos, pode vender meus dados!</label>
           </div>
-          </form>
-          <small class="d-block w-100 text-muted">Ops! Ainda não tenho conta, quero <a href="cadastro.php" class="text-info">me cadastrar</a>.</small>
-        </div>
-        <div class="modal-footer">
-          <button type="reset" class="btn btn-secondary">Limpar</button>
-          <button type="submit" class="btn btn-info">Logar</button>
-          
-        </div>
-      
+        </form>
+        <small class="d-block w-100 text-muted">Ops! Ainda não tenho conta, quero <a href="cadastro.php" class="text-info">me cadastrar</a>.</small>
+      </div>
+      <div class="modal-footer">
+        <button type="reset" class="btn btn-secondary">Limpar</button>
+        <button type="submit" class="btn btn-info">Logar</button>
+      </div>
     </div>
   </div>
 </div>
