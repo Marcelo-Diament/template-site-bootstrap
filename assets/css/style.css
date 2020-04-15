@@ -1,0 +1,58 @@
+/* RESETS */
+* { /* Seletor universal - pega tudo mesmo */
+    margin: 0; /* Margens definidas como 0 para tudo */
+    padding: 0; /* Padding (margem interna) definido como 0 para tudo */
+    box-sizing: border-box; /* As medidas dos elementos (caixas ou boxes) considera a borda e inclui o padding */
+    scroll-behavior: smooth; /* Quando há links para áreas na mesma página, o scroll se dá de maneira suave */
+}
+
+main {
+    padding: 0 !important; /* Por padrão o Bootstrap põe 15 px de padding na tag main, por isso estamos garantindo que padding será 0 (por causa do carrossel) */
+    margin-top: 59px; /* A altura do header é 59 px, por isso estamos aplicando o margin top na tag main */
+}
+ul {
+    list-style: none; /* Removendo bullets da lista não ordenada (unordered list) */
+}
+
+a, /* Seleciona os links */
+a:active, /* Links ativos */
+a:visited { /* E links já visitados */
+    text-decoration: none; /* Remove o underline padrão */
+    color: inherit; /* Evita o azul que o browser color nos links e deixa a cor da fonte declarada no elemento pai (ou superior). Inherit significa herdado */
+}
+
+/* HOME */
+
+/* Banners */
+.carousel-item { /* Seletor por classe do slide do carrossel. Seletor genérico, pega TODOS e CADA item do carrossel, para aplicarmos propriedades em comum entre todos eles */
+    background-position: center; /* Centraliza a imagem de fundo */
+    background-attachment: fixed; /* Deixa a imagem fixa no scroll (impressão do paralaxe, mas não é paralaxe */
+    background-repeat: no-repeat; /* Caso a imagem seja menor que o container, não se repetirá - como o size é cover, não precisaríamos dela na verdade */
+    background-size: cover; /* Garante que a menor medida da imagem completará o container - pode haver perda de parte da imagem mas não fica espaço vazio, o contrário do contain */
+    height: calc(50vh - 59px); /* Queremos que o banner ocupe 50% da altura da tela, incluindo o header, que tem 59 px, para isso usamos o calc() */
+}
+
+#banner01 { /* Selecionando um slide específico do carrossel por seu ID, para aplicarmos estilos específicos (a imagem de fundo, no caso) */
+    background-color: #6baabb; /* Cor de fundo, caso a imagem não seja carregada */
+    background-image: url(../img/banner-01.png); /* Imagem de fundo (como temos o cover no seletor mais genérico, não precisamos nos preocupar com o tamanho delas */
+}
+
+#banner02 { /* Selecionando um slide específico do carrossel por seu ID, para aplicarmos estilos específicos (a imagem de fundo, no caso) */
+    background-color: #011631; /* Cor de fundo, caso a imagem não seja carregada */
+    background-image: url(../img/banner-02.jpg); /* Imagem de fundo (como temos o cover no seletor mais genérico, não precisamos nos preocupar com o tamanho delas */
+}
+
+#banner03 { /* Selecionando um slide específico do carrossel por seu ID, para aplicarmos estilos específicos (a imagem de fundo, no caso) */
+    background-color: #e5873c; /* Cor de fundo, caso a imagem não seja carregada */
+    background-image: url(../img/banner-03.jpg); /* Imagem de fundo (como temos o cover no seletor mais genérico, não precisamos nos preocupar com o tamanho delas */
+}
+
+#banner04 { /* Selecionando um slide específico do carrossel por seu ID, para aplicarmos estilos específicos (a imagem de fundo, no caso) */
+    background-color: #022240; /* Cor de fundo, caso a imagem não seja carregada */
+    background-image: url(../img/banner-04.jpg); /* Imagem de fundo (como temos o cover no seletor mais genérico, não precisamos nos preocupar com o tamanho delas */
+}
+.carousel-caption, /* Legenda do banner, inclui o título e a descrição de cada banner */
+.carousel-indicators, /* Indicadores, os tracinhos no bottom do banner */
+[class*="carousel-control-"] { /* Apesar de selecionar classes também, usamos como atributo para pegar de forma mais abrangente - classes que contenham esse trecho de texto, ou seja, pegamos o carousel-control-next e o carousel-control-prev numa tacada só! */
+    filter: drop-shadow(1px 1px 1px rgba(0,0,0,0.3)); /* Incluindo filtro de sombra para dar legibilidade em fundos claros (a diferença desse filtro pro box-shadow é que ele pega as partes vazadas, enquanto o box-shadow é aplicado na box/caixa, no elemento, então não faz curvas nem pega elementos vazados - ou 'furados') */
+}
