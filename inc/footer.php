@@ -1,4 +1,4 @@
-<footer class="container-fluid bg-dark text-white mt-4 p-3">
+<footer class="container-fluid bg-dark text-white mt-5 p-3">
   <div class="row">
     <section class="col-12 col-md-6">
       <ul style="list-style:none;padding:0;margin:0">
