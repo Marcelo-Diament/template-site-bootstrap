@@ -17,7 +17,7 @@
         <!-- Aqui usamos um container dentro de um container-fluid para conferirmos as margens laterais para a vitrine de produtos por categoria -->
         <!-- Section Exemplo -->
         <!-- Section destinada à Exemplo, com classe row para podermos trabalhar com o grid de 12 colunas e usarmos as classes col-x, col-md-y, etc. -->
-        <section id="catExemplo" class="row vitrine-categoria">
+        <section id="catExemplo" class="row vitrine-categoria px-3 px-md-0">
             <!-- Row que contém cards dos produtos -->
             <div class="row justify-content-around">
                 <!-- Card (nesse caso inclui a classe promo, para destacar produtos em promoção) -->
@@ -218,7 +218,9 @@
                 <!-- /Card -->
                 <!-- Banner Destaque 01 -->
                 <div class="card m-3 p-3" id="bannerDestaque01">
-                    <a href="./contato.php" title="Entre em contato conosco!" class="m-auto"><h3 class="text-center">Entre em contato e solicite um orçamento para pedidos em grandes quantidades</h3></a>
+                    <a href="./contato.php" title="Entre em contato conosco!" class="m-auto">
+                        <h3 class="text-center">Entre em contato e solicite um orçamento para pedidos em grandes quantidades</h3>
+                    </a>
                 </div>
             </div>
             <!-- /Row que contém cards dos produtos -->

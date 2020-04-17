@@ -73,7 +73,7 @@
         <!-- Aqui usamos um container dentro de um container-fluid para conferirmos as margens laterais para a vitrine de produtos por categoria -->
         <!-- Section Mais Vendidos -->
         <!-- Section destinada à Mais Vendidos, com classe row para podermos trabalhar com o grid de 12 colunas e usarmos as classes col-x, col-md-y, etc. -->
-        <section id="catMaisVendidos" class="row">
+        <section id="catMaisVendidos" class="row px-3 px-md-0">
             <!-- Título da categoria (h2) -->
             <h2 class="col-12 text-center text-info mt-5 mb-4">Mais Vendidos</h2><!-- col-12 preenche as 12 colunas do grid, text-center centraliza o texto, text-info confere a cor verde ao texto e mt e mb são os margin top e bottom -->
             <!-- Card Deck -->
@@ -133,7 +133,7 @@
         <!-- /Section Categoria Mais Vendidos -->
         <!-- Section Mais Procurados -->
         <!-- Section destinada à Mais Procurados, com classe row para podermos trabalhar com o grid de 12 colunas e usarmos as classes col-x, col-md-y, etc. -->
-        <section id="catMaisProcurados" class="row">
+        <section id="catMaisProcurados" class="row px-3 px-md-0">
             <!-- Título da categoria (h2) -->
             <h2 class="col-12 text-center text-info mt-5 mb-4">Mais Procurados</h2><!-- col-12 preenche as 12 colunas do grid, text-center centraliza o texto, text-info confere a cor verde ao texto e mt e mb são os margin top e bottom -->
             <!-- Card Deck -->

@@ -96,12 +96,6 @@ a:visited {
     /* Incluindo filtro de sombra para dar legibilidade em fundos claros (a diferença desse filtro pro box-shadow é que ele pega as partes vazadas, enquanto o box-shadow é aplicado na box/caixa, no elemento, então não faz curvas nem pega elementos vazados - ou 'furados') */
 }
 
-/* Cards (Vitrines de Produtos) */
-.card {
-    flex: 1 0 30%;
-    /* Para a página de categoria, onde não usamos mais o card-deck, permite que os produtos ocupem apenas os 30% da row */
-}
-
 #catMaisVendidos .card.promo,
 #catMaisProcurados .card.promo {
     order: -1;
@@ -160,7 +154,7 @@ a:visited {
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 20vh;
+    height: 30vh;
     filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.3));
     /* Aplicando o filtro de sombra para parecer que a imagem de topo está 'sobre' o resto da página */
 }
@@ -185,13 +179,15 @@ a:visited {
     background-color: #6baabb;
     background-image: url(../img/banner-01.png);
 }
+
 .vitrine-categoria .card:nth-child(n + 7) {
     order: 3;
     /* Definindo que todos os cards a partir do 7o (7 + n) terão order 3. Isso para incluirmos um banner depois do 6o usando a propriedade order */
 }
 
 #bannerDestaque01 {
-    order: 2; /* Ficará posicionado após o 6o card, independentemente de onde for declarado */
+    order: 2;
+    /* Ficará posicionado após o 6o card, independentemente de onde for declarado */
     flex: 1 1 100%;
     background-color: #6baabb;
     color: #fff;
@@ -199,8 +195,10 @@ a:visited {
     /* Quando os 6 algarismos de uma cor hexadecimal se repetem, podemos declarar apenas 3 deles */
     filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.3));
     /* Incluindo filtro de sombra para dar legibilidade em fundos claros (a diferença desse filtro pro box-shadow é que ele pega as partes vazadas, enquanto o box-shadow é aplicado na box/caixa, no elemento, então não faz curvas nem pega elementos vazados - ou 'furados') */
-    transition: all 0.6s ease-in-out; /* Definindo tempo de animação de transição entre o estado normal e o hover */
+    transition: all 0.6s ease-in-out;
+    /* Definindo tempo de animação de transição entre o estado normal e o hover */
 }
+
 #bannerDestaque01:hover {
     background-color: #fff;
     color: #6baabb;
@@ -217,20 +215,27 @@ a:visited {
     font-size: 1.1em;
     height: 32px;
 }
-i.fa-phone { transform: rotate(90deg);}
+
+i.fa-phone {
+    transform: rotate(90deg);
+}
+
 /* Mapa incorporado do Google Maps */
 #localizacao iframe {
     width: 100%;
 }
+
 .horario p {
     font-weight: normal;
 }
+
 .redes-sociais i {
     font-size: 1.85em;
     color: #468ca0;
-    filter: drop-shadow(1px 1px 1px rgba(0,0,0,0.3));
+    filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.3));
     transition: transform 0.8s ease-in-out;
 }
+
 .redes-sociais i:hover {
     transform: rotateY(360deg)
 }
@@ -239,4 +244,16 @@ i.fa-phone { transform: rotate(90deg);}
 footer .redes-sociais i {
     font-size: 1.5em;
     color: #fff;
+}
+
+@media only screen and (min-width: 576px) {
+
+    /* Cards (Vitrines de Produtos) */
+    .card {
+        flex: 1 0 30%;
+        /* Para a página de categoria, onde não usamos mais o card-deck, permite que os produtos ocupem apenas os 30% da row */
+    }
+    .topo-pagina {
+        height: 20vh;
+    }
 }
