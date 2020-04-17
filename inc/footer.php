@@ -22,13 +22,13 @@
       <div class="modal-body">
         <form action="" method="post">
           <div class="form-group">
-            <label for="email">email</label>
-            <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Insira seu email">
+            <label for="emailLogin">email</label>
+            <input type="email" class="form-control" id="emailLogin" aria-describedby="emailHelp" placeholder="Insira seu email">
             <small id="emailHelp" class="form-text text-muted">Não se preocupe, não vendemos mailing lists.</small>
           </div>
           <div class="form-group">
-            <label for="senha">Password</label>
-            <input type="password" class="form-control" id="senha" placeholder="Insira sua senha" aria-describedby="passwordHelp">
+            <label for="senhaLogin">Password</label>
+            <input type="password" class="form-control" id="senhaLogin" placeholder="Insira sua senha" aria-describedby="passwordHelp">
             <small id="passwordHelp" class="form-text text-muted">Insira uma maiúscula, uma minúscula e um número pelo menos.</small>
           </div>
           <div class="form-group form-check">
