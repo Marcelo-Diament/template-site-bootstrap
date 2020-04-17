@@ -95,6 +95,16 @@ a:visited {
     filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.3));
     /* Incluindo filtro de sombra para dar legibilidade em fundos claros (a diferença desse filtro pro box-shadow é que ele pega as partes vazadas, enquanto o box-shadow é aplicado na box/caixa, no elemento, então não faz curvas nem pega elementos vazados - ou 'furados') */
 }
+#carrosselMaisVendidos .carousel-item,
+#carrosselMaisProcurados .carousel-item { height: auto;}
+.carousel-indicators.indicators-mais-vendidos,
+.carousel-indicators.indicators-mais-procurados {
+    bottom: -50px !important;
+}
+[data-target="#carrosselMaisVendidos"]:not(.active),
+[data-target="#carrosselMaisProcurados"]:not(.active) {
+    background-color: #17a2b85c !important;
+}
 
 #catMaisVendidos .card.promo,
 #catMaisProcurados .card.promo {
