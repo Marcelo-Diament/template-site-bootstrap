@@ -7,7 +7,7 @@
 <!-- main -->
 <main class="container-fluid">
     <!-- Topo da página -->
-    <header class="topo-pagina p-3 mb-5" id="catExemploTopo">
+    <header class="topo-pagina p-3 mb-5" id="topoCatExemplo">
         <h1 class="p-3">Categoria Exemplo</h1>
         <p class="px-3 pt-0 topo">Produtos pertencentes à categoria Exemplo, confira as promoções e produtos de primeira qualidade!</p>
     </header>

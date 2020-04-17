@@ -1,17 +1,12 @@
-<footer class="container-fluid bg-dark text-white mt-5 p-3">
-  <div class="row">
-    <section class="col-12 col-md-6">
-      <ul style="list-style:none;padding:0;margin:0">
-        <li><a class="text-white" style="text-decoration:none;" href="mailto:fulano@fulanitos.com">fulano@fulanitos.com</a></li>
-        <li><a class="text-white" style="text-decoration:none;" href="tel:+5511987654321">11 987 654 321</a></li>
-      </ul>
-    </section>
-    <section class="col-12 col-md-6">
-      <ul style="list-style:none;padding:0;margin:0">
-        <li>Avenida Brasil, 4200 - CEP 01234-567</li>
-        <li>Fulanos &copy; | CNPJ 01.012.012/0001-99</li>
-      </ul>
-    </section>
+<footer class="container-fluid bg-dark text-white mt-5 p-4">
+  <div class="d-flex flex-row flex-nowrap justify-content-center redes-sociais">
+    <a href="#" target="_blank" title="Acesse nosso Insta"><i class="fab fa-instagram mr-2"></i></a>
+    <a href="#" target="_blank" title="Acesse nosso Face"><i class="fab fa-facebook mr-2"></i></a>
+    <a href="#" target="_blank" title="Acesse nosso Twitter"><i class="fab fa-twitter mr-2"></i></a>
+    <a href="#" target="_blank" title="Acesse nosso Pinterest"><i class="fab fa-pinterest mr-2"></i></a>
+  </div>
+  <div class="d-flex flex-row flex-nowrap justify-content-center mt-3">
+    <small>Fulanos &copy; | CNPJ 01.012.012/0001-99</small>
   </div>
 </footer>
 <!-- Modal Login -->
