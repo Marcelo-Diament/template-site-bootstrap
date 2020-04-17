@@ -1,21 +1,11 @@
-<!-- head -->
 <?php require_once("./inc/head.php"); ?>
-<!-- /head -->
-<!-- header -->
 <?php require_once("./inc/header.php"); ?>
-<!-- /header -->
-<!-- main -->
 <main class="container-fluid">
-    <!-- Topo da página -->
     <header class="topo-pagina p-3 mb-5" id="topoContato">
         <h1 class="p-3">Contato</h1>
         <p class="px-3 pt-0 topo">Entre em contato conosco e solicite uma condição especial para sua compra!</p>
     </header>
-    <!-- /Topo da página -->
-    <!-- Section de Contato -->
-    <!-- Aqui usamos um container dentro de um container-fluid para conferirmos as margens laterais para a vitrine de produtos por categoria -->
     <section class="container my-3">
-        <!-- Criando uma div com a classe row para usarmos as colunas e dividirmos a row entre dados de contato e formulário de contato -->
         <div class="row">
             <article class="form col-12 col-md-6" id="formularioContato">
                 <h4>Envie sua mensagem!</h4>
@@ -45,16 +35,12 @@
                             <select class="form-control" name="uf" id="uf">
                                 <option disabled selected>UF</option>
                                 <?php
-                                // Array de UFs (ordenado por região)
                                 $ufs = ["RO", "AC", "AM", "RR", "PA", "AP", "TO", "MA", "PI", "CE", "RN", "PB", "PE", "AL", "SE", "BA", "MG", "ES", "RJ", "SP", "PR", "SC", "RS", "MS", "MT", "GO", "DF"];
-                                // Ordenando o array de UFs (ascendente)
                                 asort($ufs);
                                 ?>
-                                <!-- Criando um loop PHP para percorrer as UFs do array $ufs. Para cada UF criaremos uma tag <option></option> -->
                                 <?php foreach ($ufs as $uf) : ?>
                                     <option value="<?= $uf ?>"><?= $uf ?></option>
                                 <?php endforeach; ?>
-                                <!-- Finalizando nosso loop foreach -->
                             </select>
                         </div>
                     </div>
@@ -79,9 +65,6 @@
                         </div>
                     </div>
                     <div class="form-group clearfix">
-                        <!-- Importante: como estamos usando float no botão, acabamos por 'bagunçar' o posicionamento dos elementos seguintes.
-                        Por isso, estamos usando a classe clearfix no elemento pai do botão (ele possui um pseudo elemento com display block e propriedade clear:both)
-                        Essas propriedades fazem com que os elementos seguintes passem a se comportar normalmente. -->
                         <button type="submit" class="btn btn-info float-right">Enviar</button>
                     </div>
                 </form>
@@ -118,9 +101,5 @@
             </article>
         </div>
     </section>
-    <!-- /Section de Contato -->
 </main>
-<!-- /main -->
-<!-- footer -->
 <?php require_once("./inc/footer.php"); ?>
-<!-- /footer -->

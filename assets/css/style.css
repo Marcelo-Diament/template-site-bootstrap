@@ -95,12 +95,17 @@ a:visited {
     filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.3));
     /* Incluindo filtro de sombra para dar legibilidade em fundos claros (a diferença desse filtro pro box-shadow é que ele pega as partes vazadas, enquanto o box-shadow é aplicado na box/caixa, no elemento, então não faz curvas nem pega elementos vazados - ou 'furados') */
 }
+
 #carrosselMaisVendidos .carousel-item,
-#carrosselMaisProcurados .carousel-item { height: auto;}
+#carrosselMaisProcurados .carousel-item {
+    height: auto;
+}
+
 .carousel-indicators.indicators-mais-vendidos,
 .carousel-indicators.indicators-mais-procurados {
     bottom: -50px !important;
 }
+
 [data-target="#carrosselMaisVendidos"]:not(.active),
 [data-target="#carrosselMaisProcurados"]:not(.active) {
     background-color: #17a2b85c !important;
@@ -263,7 +268,9 @@ footer .redes-sociais i {
         flex: 1 0 30%;
         /* Para a página de categoria, onde não usamos mais o card-deck, permite que os produtos ocupem apenas os 30% da row */
     }
+
     .topo-pagina {
         height: 20vh;
+        /* Aplicando altura ao topo da página (em telas com largura a partir de 576px) */
     }
 }
