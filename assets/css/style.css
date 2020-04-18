@@ -124,11 +124,6 @@ a:not(.btn) {
     font-weight: bolder;
 }
 
-.card.promo .preco-vitrine {
-    font-weight: bolder;
-    /* Destaca os preços em promoção */
-}
-
 .badge.badge-pill.badge-info {
     position: absolute;
     /* Faz com que a badge promo se sobreponha ao restante do card (funciona pois o card tem position relative por default) */
@@ -153,7 +148,7 @@ a:not(.btn) {
 }
 
 .card .card-footer {
-    min-height: 78px;
+    min-height: 86px;
     /* Definindo altura mínima para os card-footer de modo que fiquem todos da mesma altura (em promoção ou não) */
     padding: 16px;
     /* Definindo um padding para os card-footer*/
