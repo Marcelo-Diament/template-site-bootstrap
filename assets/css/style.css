@@ -39,6 +39,11 @@ a:not(.btn) {
     color: inherit;
 }
 
+.table td,
+.table th {
+    vertical-align: middle !important;
+}
+
 /* HOME */
 
 /* Banners  / Carousel */
@@ -281,6 +286,27 @@ i.fa-phone {
 
 .redes-sociais i:hover {
     transform: rotateY(360deg)
+}
+
+/* Carrinho */
+#topoCarrinho {
+    background-color: #e5873c;
+    background-image: url(../img/banner-01.jpg);
+}
+.cart-qtd {
+    font-size: .85em;
+}
+.cart-size {
+    font-weight: bolder;
+}
+.cart-qtd:after {
+    font-family: "Font Awesome 5 Pro";
+    content: ' \f00d';
+    font-weight: lighter;
+    font-size: .85em;
+}
+.cart-subtotal-price {
+    font-weight: bolder;
 }
 
 /* Footer */

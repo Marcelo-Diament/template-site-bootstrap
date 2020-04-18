@@ -35,12 +35,12 @@
                 <h2>Produto Doideira</h2>
                 <small>SKU 123-OIM4-ES9</small>
                 <p class="my-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem iure, esse totam tenetur minima sapiente cum? At, voluptatem saepe. Voluptates adipisci culpa cum ullam soluta aliquid deleniti natus tenetur perferendis!</p>
-                <form action="" method="post" id="formComprar">
+                <form action="carrinho.php" method="post" id="formComprar">
                     <div class="form-row">
                         <div class="form-group col-md-3">
                             <label for="tamanho">Tamanhos</label>
-                            <select class="form-control" name="tamanho" id="tamanho">
-                                <option disabled selected>--</option>
+                            <select class="form-control" name="tamanho" id="tamanho" required>
+                                <option value="" disabled selected>--</option>
                                 <?php $tamanhos = ["PP", "P", "M", "G", "GG"]; ?>
                                 <?php foreach ($tamanhos as $tamanho) : ?>
                                     <option value="<?= $tamanho ?>"><?= $tamanho ?></option>
@@ -51,7 +51,7 @@
                     <div class="form-row">
                         <div class="form-group col-md-3">
                             <label for="quantidade">Quantidade</label>
-                            <input type="number" class="form-control" id="quantidade" step="1" min="1" value="1">
+                            <input type="number" class="form-control" id="quantidade" step="1" min="1" value="1" required>
                         </div>
                     </div>
                     <div class="form-group">
