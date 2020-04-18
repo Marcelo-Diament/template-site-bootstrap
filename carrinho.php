@@ -8,7 +8,7 @@
     <section class="container my-3">
         <div class="row">
             <form class="col-12 mb-5" id="carrinhoForm" action="pagamento.php" method="post">
-                <h4 class="text-center">Lista de Produtos Selecionados</h4>
+                <h2 class="col-12 text-center text-info mt-5 mb-4">Produtos selecionados</h2>
                 <p class="ml-0 mb-5 text-center">Confira os produtos selecionados e clique em Finalizar Compra</p>
                 <table class="table text-center">
                     <thead class="thead-light">
@@ -203,11 +203,132 @@
                 </div>
             </form>
         </div>
-        <div class="row">
-            <article class="col-12 my-5">
-
-            </article>
-        </div>
+        <section id="catMaisVendidos" class="row px-3 px-md-0 mb-5">
+            <h2 class="col-12 text-center text-info mt-5 mb-4">Você também pode se interessar por...</h2>
+            <div id="carrosselMaisVendidos" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators indicators-mais-vendidos">
+                    <li data-target="#carrosselMaisVendidos" data-slide-to="0" class="bg-info active"></li>
+                    <li data-target="#carrosselMaisVendidos" data-slide-to="1" class="bg-info"></li>
+                    <li data-target="#carrosselMaisVendidos" data-slide-to="2" class="bg-info"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active" id="maisVendidos01">
+                        <div class="card-deck">
+                            <div class="card promo">
+                                <img class="card-img-top" src="./assets/img/produto-01-440x440.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h4 class="card-title">Produto X1</h4>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                </div>
+                                <div class="card-footer">
+                                    <p class="preco-vitrine text-info d-inline">R$ 99.99</p>
+                                    <a href="produto.php" class="btn btn-info float-right">Comprar</a>
+                                </div>
+                                <span class="badge badge-pill badge-info">PROMO</span>
+                            </div>
+                            <div class="card d-none d-md-block">
+                                <img class="card-img-top" src="./assets/img/produto-02-440x440.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h4 class="card-title">Produto X2</h4>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                </div>
+                                <div class="card-footer">
+                                    <p class="preco-vitrine text-info d-inline">R$ 99.99</p>
+                                    <a href="produto.php" class="btn btn-info float-right">Comprar</a>
+                                </div>
+                            </div>
+                            <div class="card d-none d-md-block">
+                                <img class="card-img-top" src="./assets/img/produto-03-440x440.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h4 class="card-title">Produto X3</h4>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                </div>
+                                <div class="card-footer">
+                                    <p class="preco-vitrine text-info d-inline">R$ 99.99</p>
+                                    <a href="produto.php" class="btn btn-info float-right">Comprar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item" id="maisVendidos02">
+                        <div class="card-deck">
+                            <div class="card promo">
+                                <img class="card-img-top" src="./assets/img/produto-04-440x440.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h4 class="card-title">Produto X1</h4>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                </div>
+                                <div class="card-footer">
+                                    <p class="preco-vitrine text-info d-inline">R$ 99.99</p>
+                                    <a href="produto.php" class="btn btn-info float-right">Comprar</a>
+                                </div>
+                                <span class="badge badge-pill badge-info">PROMO</span>
+                            </div>
+                            <div class="card d-none d-md-block">
+                                <img class="card-img-top" src="./assets/img/produto-05-440x440.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h4 class="card-title">Produto X2</h4>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                </div>
+                                <div class="card-footer">
+                                    <p class="preco-vitrine text-info d-inline">R$ 99.99</p>
+                                    <a href="produto.php" class="btn btn-info float-right">Comprar</a>
+                                </div>
+                            </div>
+                            <div class="card d-none d-md-block">
+                                <img class="card-img-top" src="./assets/img/produto-06-440x440.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h4 class="card-title">Produto X3</h4>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                </div>
+                                <div class="card-footer">
+                                    <p class="preco-vitrine text-info d-inline">R$ 99.99</p>
+                                    <a href="produto.php" class="btn btn-info float-right">Comprar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item" id="maisVendidos03">
+                        <div class="card-deck">
+                            <div class="card promo">
+                                <img class="card-img-top" src="./assets/img/produto-07-440x440.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h4 class="card-title">Produto X1</h4>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                </div>
+                                <div class="card-footer">
+                                    <p class="preco-vitrine text-info d-inline">R$ 99.99</p>
+                                    <a href="produto.php" class="btn btn-info float-right">Comprar</a>
+                                </div>
+                                <span class="badge badge-pill badge-info">PROMO</span>
+                            </div>
+                            <div class="card d-none d-md-block">
+                                <img class="card-img-top" src="./assets/img/produto-08-440x440.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h4 class="card-title">Produto X2</h4>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                </div>
+                                <div class="card-footer">
+                                    <p class="preco-vitrine text-info d-inline">R$ 99.99</p>
+                                    <a href="produto.php" class="btn btn-info float-right">Comprar</a>
+                                </div>
+                            </div>
+                            <div class="card d-none d-md-block">
+                                <img class="card-img-top" src="./assets/img/produto-01-440x440.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h4 class="card-title">Produto X3</h4>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                </div>
+                                <div class="card-footer">
+                                    <p class="preco-vitrine text-info d-inline">R$ 99.99</p>
+                                    <a href="produto.php" class="btn btn-info float-right">Comprar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </section>
 </main>
 <?php require_once("./inc/footer.php"); ?>
