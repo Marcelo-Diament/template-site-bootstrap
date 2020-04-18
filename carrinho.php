@@ -7,7 +7,7 @@
     </header>
     <section class="container my-3">
         <div class="row">
-            <article class="form col-12" id="formularioContato">
+            <form class="col-12 mb-5" id="carrinhoForm" action="pagamento.php" method="post">
                 <h4 class="text-center">Lista de Produtos Selecionados</h4>
                 <p class="ml-0 mb-5 text-center">Confira os produtos selecionados e clique em Finalizar Compra</p>
                 <table class="table text-center">
@@ -48,11 +48,11 @@
                                             </button>
                                         </div>
                                         <div class="modal-body">
-                                            <form action="carrinho.php" method="post" id="formProduto01Edit">
+                                            <div id="formProduto01Edit">
                                                 <div class="form-row">
                                                     <div class="form-group col">
                                                         <label for="tamanhoProduto01">Tamanhos</label>
-                                                        <select class="form-control" name="tamanhoProduto01" id="tamanhoProduto01" required>
+                                                        <select class="form-control" name="tamanhoProduto01" id="tamanhoProduto01" form="carrinhoForm" required>
                                                             <option value="" disabled selected>--</option>
                                                             <?php $tamanhos = ["PP", "P", "M", "G", "GG"]; ?>
                                                             <?php foreach ($tamanhos as $tamanho) : ?>
@@ -62,13 +62,13 @@
                                                     </div>
                                                     <div class="form-group col">
                                                         <label for="quantidadeProduto01">Quantidade</label>
-                                                        <input type="number" class="form-control" id="quantidadeProduto01" step="1" min="1" value="1" required>
+                                                        <input type="number" class="form-control" id="quantidadeProduto01" step="1" min="1" value="1" form="carrinhoForm" required>
                                                     </div>
                                                 </div>
                                                 <div class="form-group clearfix">
-                                                    <button type="submit" class="mx-auto my-2 btn btn-info btn-lg col-md-3 float-right">Atualizar</button>
+                                                    <button data-dismiss="modal" class="mx-auto my-2 btn btn-info btn-lg col-md-3 float-right">Atualizar</button>
                                                 </div>
-                                            </form>
+                                            </div>
                                         </div>
                                     </div>
 
@@ -104,11 +104,11 @@
                                             </button>
                                         </div>
                                         <div class="modal-body">
-                                            <form action="carrinho.php" method="post" id="formProduto02Edit">
+                                            <div id="formProduto02Edit">
                                                 <div class="form-row">
                                                     <div class="form-group col">
                                                         <label for="tamanhoProduto02">Tamanhos</label>
-                                                        <select class="form-control" name="tamanhoProduto02" id="tamanhoProduto02" required>
+                                                        <select class="form-control" name="tamanhoProduto02" id="tamanhoProduto02" form="carrinhoForm" required>
                                                             <option value="" disabled selected>--</option>
                                                             <?php $tamanhos = ["PP", "P", "M", "G", "GG"]; ?>
                                                             <?php foreach ($tamanhos as $tamanho) : ?>
@@ -118,13 +118,13 @@
                                                     </div>
                                                     <div class="form-group col">
                                                         <label for="quantidadeProduto02">Quantidade</label>
-                                                        <input type="number" class="form-control" id="quantidadeProduto02" step="1" min="1" value="1" required>
+                                                        <input type="number" class="form-control" id="quantidadeProduto02" step="1" min="1" value="1" form="carrinhoForm" required>
                                                     </div>
                                                 </div>
                                                 <div class="form-group clearfix">
-                                                    <button type="submit" class="mx-auto my-2 btn btn-info btn-lg col-md-3 float-right">Atualizar</button>
+                                                    <button data-dismiss="modal" class="mx-auto my-2 btn btn-info btn-lg col-md-3 float-right">Atualizar</button>
                                                 </div>
-                                            </form>
+                                            </div>
                                         </div>
                                     </div>
 
@@ -160,11 +160,11 @@
                                             </button>
                                         </div>
                                         <div class="modal-body">
-                                            <form action="carrinho.php" method="post" id="formProduto03Edit">
+                                            <div id="formProduto03Edit">
                                                 <div class="form-row">
                                                     <div class="form-group col">
                                                         <label for="tamanhoProduto03">Tamanhos</label>
-                                                        <select class="form-control" name="tamanhoProduto03" id="tamanhoProduto03" required>
+                                                        <select class="form-control" name="tamanhoProduto03" id="tamanhoProduto03" form="carrinhoForm" required>
                                                             <option value="" disabled selected>--</option>
                                                             <?php $tamanhos = ["PP", "P", "M", "G", "GG"]; ?>
                                                             <?php foreach ($tamanhos as $tamanho) : ?>
@@ -174,13 +174,13 @@
                                                     </div>
                                                     <div class="form-group col">
                                                         <label for="quantidadeProduto03">Quantidade</label>
-                                                        <input type="number" class="form-control" id="quantidadeProduto03" step="1" min="1" value="1" required>
+                                                        <input type="number" class="form-control" id="quantidadeProduto03" step="1" min="1" value="1" form="carrinhoForm" required>
                                                     </div>
                                                 </div>
                                                 <div class="form-group clearfix">
-                                                    <button type="submit" class="mx-auto my-2 btn btn-info btn-lg col-md-3 float-right">Atualizar</button>
+                                                    <button data-dismiss="modal" class="mx-auto my-2 btn btn-info btn-lg col-md-3 float-right">Atualizar</button>
                                                 </div>
-                                            </form>
+                                            </div>
                                         </div>
                                     </div>
 
@@ -190,33 +190,18 @@
                         </tr>
                     </tbody>
                 </table>
-
-            </article>
-            <article class="dados-contato col-12 col-md-6" id="dadosContato">
-                <h4>Entre em contato conosco!</h4>
-                <p class="ml-0">Se preferir, entre em contato conosco - teremos prazer em te ajudar!</p>
-                <ul class="mt-5 p-4 rounded bg-light">
-                    <li class="mt-3 mb-5 horario">
-                        <h5 class="mb-2 text-center">Horário de Funcionamento</h5>
-                        <p class="text-center">Segunda à Sábado das 8h às 18h</p>
-                    </li>
-                    <h5 class="mb-3 text-center">Meios de Contato</h5>
-                    <li class="text-center"><a href="https://wa.me/+5511976052723?text=Ol%C3%A1,%0D%0A%0D%0AAcessei%20o%20site%20e%20gostaria%20de%20saber%20mais%20sobre%0D%0A" title="Envie um zap pra gente!"><i class="fab fa-whatsapp mr-2"></i>11 97605 2723</a></li>
-                    <li class="text-center"><a href="tel:+5511976052723" title="Ligue para a gente"><i class="fas fa-phone mr-2"></i>11 2345 6789</a></li>
-                    <li class="text-center"><a href="mailto:contato@djament.com.br" title="Envie um email para a gente"><i class="fas fa-envelope mr-2"></i>marcelo@djament.com.br</a></li>
-                    <li class="text-center"><a href="https://g.page/digitalhousebrasil?share" target="_blank" title="Veja nosso endereço no Google Maps"><i class="fa fa-map-marker-alt mr-2"></i>Av. Dr. Cardoso de Melo, 90 - Vila Olímpia, São Paulo</a></li>
-                    <li class="mt-3 mb-5 redes-sociais">
-                        <h5 class="mb-4 text-center">Conecte-se com a gente</h5>
-                        <div class="d-flex flex-row flex-nowrap justify-content-center">
-                            <a href="#" target="_blank" title="Acesse nosso Insta"><i class="fab fa-instagram mr-2"></i></a>
-                            <a href="#" target="_blank" title="Acesse nosso Face"><i class="fab fa-facebook mr-2"></i></a>
-                            <a href="#" target="_blank" title="Acesse nosso Twitter"><i class="fab fa-twitter mr-2"></i></a>
-                            <a href="#" target="_blank" title="Acesse nosso Pinterest"><i class="fab fa-pinterest mr-2"></i></a>
+                <div class="form-inline">
+                    <div class="form-group col-md-6">
+                        <label for="cupomDesconto" class="col-auto pl-0">Cupom de Desconto</label>
+                        <div class="col-md-7">
+                            <input type="text" class="form-control" name="cupomDesconto" id="cupomDesconto" placeholder="INSIRA SEU CUPOM">
                         </div>
-                    </li>
-                </ul>
-                <a href="./produto.php"><img src="" alt=""></a>
-            </article>
+                    </div>
+                    <div class="form-group col-md-2 offset-4">
+                        <button type="submit" class="btn btn-info" form="carrinhoForm">Finalizar Compra</button>
+                    </div>
+                </div>
+            </form>
         </div>
         <div class="row">
             <article class="col-12 my-5">
