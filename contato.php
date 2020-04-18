@@ -24,7 +24,7 @@
                     <div class="form-row">
                         <div class="form-group col-md-3">
                             <label for="cep">CEP</label>
-                            <input type="text" class="form-control" name="cep" id="cep">
+                            <input type="text" class="form-control" name="cep" id="cep" placeholder="01234-567">
                         </div>
                         <div class="form-group col-md-7">
                             <label for="cidade">Cidade</label>
