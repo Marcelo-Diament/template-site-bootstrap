@@ -1,4 +1,5 @@
-<footer class="container-fluid bg-dark text-white mt-5 p-4">
+<footer class="container-fluid mt-5 mb-0 mx-0 pt-5 px-0">
+  <div class="bg-dark text-white mx-0 p-5">
   <div class="d-flex flex-row flex-nowrap justify-content-center redes-sociais">
     <a href="#" target="_blank" title="Acesse nosso Insta"><i class="fab fa-instagram mr-2"></i></a>
     <a href="#" target="_blank" title="Acesse nosso Face"><i class="fab fa-facebook mr-2"></i></a>
@@ -7,6 +8,7 @@
   </div>
   <div class="d-flex flex-row flex-nowrap justify-content-center mt-3">
     <small>Fulanos &copy; | CNPJ 01.012.012/0001-99</small>
+  </div>
   </div>
 </footer>
 <!-- Modal Login -->

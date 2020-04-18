@@ -33,8 +33,10 @@ a:hover,
 a:visited {
     text-decoration: none;
     /* Remove o underline padrão */
+}
+
+a:not(.btn) {
     color: inherit;
-    /* Evita o azul que o browser color nos links e deixa a cor da fonte declarada no elemento pai (ou superior). Inherit significa herdado */
 }
 
 /* HOME */
@@ -187,6 +189,37 @@ a:visited {
     /* Deixando os textos dos parágrafos dos headers dos topos das páginas 20% maior do que seriam por default (por padrão) */
     font-weight: bold;
     /* Aplicando o negrito a esses parágrafos */
+}
+
+/* Produto */
+#topoProduto {
+    background-color: #e5873c;
+    background-image: url(../img/banner-02.jpg);
+}
+
+#carrosselProduto {
+    overflow: hidden;
+}
+
+#carrosselProduto img {
+    width: 100%;
+    height: auto;
+}
+
+[data-target="#carrosselProduto"]:not(.active) {
+    background-color: #17a2b85c !important;
+}
+
+i.fas.fa-chevron-down {
+    transition: transform 0.6s ease-in-out;
+}
+
+.btn[aria-expanded="true"] i.fas.fa-chevron-down {
+    transform: rotate(180deg);
+}
+
+div[data-parent="#accordionTabsProduto"] .card-body {
+    padding: 20px;
 }
 
 /* Página de Categoria */
