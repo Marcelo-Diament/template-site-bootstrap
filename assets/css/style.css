@@ -44,14 +44,14 @@ a:not(.btn) {
 /* Banners  / Carousel */
 .carousel-item {
     /* Seletor por classe do slide do carrossel. Seletor genérico, pega TODOS e CADA item do carrossel, para aplicarmos propriedades em comum entre todos eles */
-    background-position: center;
-    /* Centraliza a imagem de fundo */
     background-attachment: fixed;
     /* Deixa a imagem fixa no scroll (impressão do paralaxe, mas não é paralaxe */
     background-repeat: no-repeat;
     /* Caso a imagem seja menor que o container, não se repetirá - como o size é cover, não precisaríamos dela na verdade */
     background-size: cover;
     /* Garante que a menor medida da imagem completará o container - pode haver perda de parte da imagem mas não fica espaço vazio, o contrário do contain */
+    background-position: center bottom;
+    /* Centraliza a imagem de fundo */
     height: calc(50vh - 59px);
     /* Queremos que o banner ocupe 50% da altura da tela, incluindo o header, que tem 59 px, para isso usamos o calc() */
 }
@@ -60,7 +60,7 @@ a:not(.btn) {
     /* Selecionando um slide específico do carrossel por seu ID, para aplicarmos estilos específicos (a imagem de fundo, no caso) */
     background-color: #6baabb;
     /* Cor de fundo, caso a imagem não seja carregada */
-    background-image: url(../img/banner-01.png);
+    background-image: url(../img/banner-01.jpg);
     /* Imagem de fundo (como temos o cover no seletor mais genérico, não precisamos nos preocupar com o tamanho delas */
 }
 
@@ -84,7 +84,7 @@ a:not(.btn) {
     /* Selecionando um slide específico do carrossel por seu ID, para aplicarmos estilos específicos (a imagem de fundo, no caso) */
     background-color: #022240;
     /* Cor de fundo, caso a imagem não seja carregada */
-    background-image: url(../img/banner-04.jpg);
+    background-image: url(../img/banner-04.png);
     /* Imagem de fundo (como temos o cover no seletor mais genérico, não precisamos nos preocupar com o tamanho delas */
 }
 
