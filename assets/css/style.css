@@ -189,7 +189,7 @@ a:not(.btn) {
 /* Produto */
 #topoProduto {
     background-color: #e5873c;
-    background-image: url(../img/banner-02.jpg);
+    background-image: url(../img/banner-01.jpg);
 }
 
 #carrosselProduto {
@@ -220,7 +220,7 @@ div[data-parent="#accordionTabsProduto"] .card-body {
 /* Página de Categoria */
 #topoCatExemplo {
     background-color: #6baabb;
-    background-image: url(../img/banner-01.png);
+    background-image: url(../img/banner-01.jpg);
 }
 
 .vitrine-categoria .card:nth-child(n + 7) {
@@ -250,7 +250,7 @@ div[data-parent="#accordionTabsProduto"] .card-body {
 /* Página de Contato */
 #topoContato {
     background-color: #6baabb;
-    background-image: url(../img/banner-01.png);
+    background-image: url(../img/banner-01.jpg);
 }
 
 .dados-contato ul li {
