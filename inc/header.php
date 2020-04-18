@@ -2,8 +2,8 @@
     <header>
         <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
             <a class="navbar-brand" href="./index.php">
-                <img src="https://slack.global.ssl.fastly.net/9427/img/icons/app-256.png" alt="Logo" width="30" height="30">
-                Empresa X
+                <img src="./assets/img/logo.png" alt="Logo" width="30" height="30" class="mr-2">
+                Decô
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>

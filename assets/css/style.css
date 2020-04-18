@@ -309,6 +309,12 @@ i.fa-phone {
     font-weight: bolder;
 }
 
+/* Pagamento */
+#topoPagamento {
+    background-color: #e5873c;
+    background-image: url(../img/banner-01.jpg);
+}
+
 /* Footer */
 footer .redes-sociais i {
     font-size: 1.5em;

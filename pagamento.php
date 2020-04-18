@@ -1,38 +1,38 @@
 <?php require_once("./inc/head.php"); ?>
 <?php require_once("./inc/header.php"); ?>
 <main class="container-fluid">
-    <header class="topo-pagina p-3 mb-5" id="topoContato">
-        <h1 class="p-3">Contato</h1>
+    <header class="topo-pagina p-3 mb-5" id="topoPagamento">
+        <h1 class="p-3">Pagamento</h1>
         <p class="px-3 pt-0 topo">Entre em contato conosco e solicite uma condição especial para sua compra!</p>
     </header>
     <section class="container my-3">
         <div class="row">
-            <article class="form col-12 col-md-6" id="formularioContato">
-                <h4>Envie sua mensagem!</h4>
-                <p class="ml-0">Preencha o formulário a seguir e responderemos o quanto antes!</p>
+            <article class="form col-12 col-md-7" id="formularioContato">
+                <h4>Endereço de Entrega</h4>
+                <p class="ml-0">Preencha o formulário formulário com os dados do endeço de entrega</p>
                 <form action="" method="post">
                     <div class="form-row">
                         <div class="form-group col-md-6">
-                            <label for="nome">Nome</label>
-                            <input type="text" class="form-control" name="nome" id="nome" placeholder="Seu nome" required>
+                            <label for="nomeDestinatario">Nome do Destinatário</label>
+                            <input type="text" class="form-control" name="nomeDestinatario" id="nomeDestinatario" placeholder="Nome de quem vai receber" required>
                         </div>
                         <div class="form-group col-md-6">
-                            <label for="email">email</label>
-                            <input type="email" class="form-control" name="email" id="email" placeholder="nome@email.com" required>
+                            <label for="emailDestinatario">email do Destinatário</label>
+                            <input type="email" class="form-control" name="emailDestinatario" id="emailDestinatario" placeholder="nomedestinatario@email.com" required>
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-group col-md-3">
-                            <label for="cep">CEP</label>
-                            <input type="text" class="form-control" name="cep" id="cep" placeholder="01234-567">
+                            <label for="cepDestinatario">CEP</label>
+                            <input type="text" class="form-control" name="cepDestinatario" id="cepDestinatario" placeholder="01234-567" required>
                         </div>
                         <div class="form-group col-md-7">
-                            <label for="cidade">Cidade</label>
-                            <input type="text" class="form-control" name="cidade" id="cidade" placeholder="São Paulo">
+                            <label for="cidadeDestinatario">Cidade</label>
+                            <input type="text" class="form-control" name="cidadeDestinatario" id="cidadeDestinatario" placeholder="São Paulo" required>
                         </div>
                         <div class="form-group col-md-2">
-                            <label for="uf">UF</label>
-                            <select class="form-control" name="uf" id="uf">
+                            <label for="ufDestinatario">UF</label>
+                            <select class="form-control" name="ufDestinatario" id="ufDestinatario" required>
                                 <option disabled selected>UF</option>
                                 <?php
                                 $ufs = ["RO", "AC", "AM", "RR", "PA", "AP", "TO", "MA", "PI", "CE", "RN", "PB", "PE", "AL", "SE", "BA", "MG", "ES", "RJ", "SP", "PR", "SC", "RS", "MS", "MT", "GO", "DF"];
@@ -45,18 +45,23 @@
                         </div>
                     </div>
                     <div class="form-row">
-                        <div class="form-group col-md-10">
-                            <label for="logradouro">Endereço</label>
-                            <input type="text" class="form-control" name="logradouro" id="logradouro" placeholder="Av. Brasil">
+                        <div class="form-group col-md-7">
+                            <label for="logradouroDestinatario">Endereço</label>
+                            <input type="text" class="form-control" name="logradouroDestinatario" id="logradouroDestinatario" placeholder="Av. Brasil" required>
                         </div>
                         <div class="form-group col-md-2">
-                            <label for="numero">Número</label>
-                            <input type="text" class="form-control" name="numero" id="numero" placeholder="123-A">
+                            <label for="numeroDestinatario">Número</label>
+                            <input type="text" class="form-control" name="numeroDestinatario" id="numeroDestinatario" placeholder="123-A" required>
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label for="complementoDestinatario">Complemento</label>
+                            <input type="text" class="form-control" name="complementoDestinatario" id="complementoDestinatario" placeholder="Apto. 420" required>
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="mensagem">Mensagem</label>
-                        <textarea class="form-control" name="mensagem" id="mensagem" rows="3"></textarea>
+                        <label for="observacaoPedido">Nota do Cliente</label>
+                        <textarea class="form-control" name="observacaoPedido" id="observacaoPedido" rows="3" aria-describedby="#observacaoPedidoHelp"></textarea>
+                        <small id="observacaoPedidoHelp" class="form-text text-muted">Se houver alguma observação, inclua nesse campo (ex.: deixar na portaria).</small>
                     </div>
                     <div class="form-group">
                         <div class="form-check">
@@ -69,7 +74,7 @@
                     </div>
                 </form>
             </article>
-            <article class="dados-contato col-12 col-md-6" id="dadosContato">
+            <article class="dados-contato col-12 col-md-5" id="dadosContato">
                 <h4>Entre em contato conosco!</h4>
                 <p class="ml-0">Se preferir, entre em contato conosco - teremos prazer em te ajudar!</p>
                 <ul class="mt-5 p-4 rounded bg-light">
@@ -92,11 +97,6 @@
                         </div>
                     </li>
                 </ul>
-            </article>
-        </div>
-        <div class="row">
-            <article class="col-12 my-5" id="localizacao">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14624.191902814306!2d-46.6753419!3d-23.6026123!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x739f0ddb0439cf94!2sDigital%20House%20S%C3%A3o%20Paulo!5e0!3m2!1spt-BR!2sbr!4v1587083400476!5m2!1spt-BR!2sbr" height="450" frameborder="0" style="border:0;" allowfullscreen="true" aria-hidden="false" tabindex="0"></iframe>
             </article>
         </div>
     </section>
