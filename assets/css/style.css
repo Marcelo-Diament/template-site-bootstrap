@@ -293,18 +293,22 @@ i.fa-phone {
     background-color: #e5873c;
     background-image: url(../img/banner-01.jpg);
 }
+
 .cart-qtd {
     font-size: .85em;
 }
+
 .cart-size {
     font-weight: bolder;
 }
+
 .cart-qtd:after {
     font-family: "Font Awesome 5 Pro";
     content: ' \f00d';
     font-weight: lighter;
     font-size: .85em;
 }
+
 .cart-subtotal-price {
     font-weight: bolder;
 }
@@ -313,6 +317,13 @@ i.fa-phone {
 #topoPagamento {
     background-color: #e5873c;
     background-image: url(../img/banner-01.jpg);
+}
+
+.checkout-qtd:after {
+    font-family: "Font Awesome 5 Pro";
+    content: ' \f00d';
+    font-weight: lighter;
+    font-size: .85em;
 }
 
 /* Footer */
@@ -332,5 +343,9 @@ footer .redes-sociais i {
     .topo-pagina {
         height: 20vh;
         /* Aplicando altura ao topo da página (em telas com largura a partir de 576px) */
+    }
+
+    #formularioPagamento .sticky-top {
+        top: 80px;
     }
 }
