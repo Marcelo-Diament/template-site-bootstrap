@@ -71,7 +71,7 @@
                     <div class="form-group">
                         <label for="observacaoPedido">Nota do Cliente</label>
                         <textarea class="form-control" name="observacaoPedido" id="observacaoPedido" rows="3" aria-describedby="#observacaoPedidoHelp"></textarea>
-                        <small id="observacaoPedidoHelp" class="form-text text-muted">Se houver alguma observação, inclua nesse campo (ex.: deixar na portaria).</small>
+                        <small id="observacaoPedidoHelp" class="form-text text-muted">Se houver alguma observação sobre a compra, inclua nesse campo (ex.: deixar na portaria).</small>
                     </div>
                     <div class="form-group">
                         <div class="form-check">
@@ -130,7 +130,7 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="observacaoEntrega">Nota do Entrega</label>
+                            <label for="observacaoEntrega">Nota de Entrega</label>
                             <textarea class="form-control" name="observacaoEntrega" id="observacaoEntrega" rows="3" aria-describedby="#observacaoEntregaHelp"></textarea>
                             <small id="observacaoEntregaHelp" class="form-text text-muted">Se houver alguma observação, inclua nesse campo (ex.: deixar na portaria).</small>
                         </div>
