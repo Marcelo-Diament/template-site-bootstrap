@@ -1,16 +1,17 @@
 <?php require_once("./inc/head.php"); ?>
 <?php require_once("./inc/header.php"); ?>
 <main class="container-fluid">
-    <header class="topo-pagina p-3 mb-5" id="topoPagamentoConfirmado">
-        <h1 class="p-3">Pagamento Recebido</h1>
-        <p class="px-3 pt-0 topo">Parabés! Você concluiu sua compra conosco!</p>
+    <header class="topo-pagina p-3 mb-5" id="topoErro">
+        <h1 class="p-3">Erro 404</h1>
+        <p class="px-3 pt-0 topo">Ixi... a página procurada não existe...</p>
     </header>
     <section class="container my-3">
         <div class="row">
-            <article class="col-12" id="pagamentoConfirmado">
-                <i class="fad fa-gifts col-12 text-center text-info"></i>
-                <h2 class="col-12 text-center text-info mt-5 mb-4">Muito obrigado!</h2>
-                <p class="mb-5 text-center">Agora é só esperar chegar! Aproveite e já comece a namorar sua próxima aquisição!</p>
+            <article class="col-12" id="erro404">
+                <i class="fad fa-bug col-12 text-center text-info"></i>
+                <h2 class="col-12 text-center text-info mt-5 mb-4">Ops!</h2>
+                <p class="mb-5 text-center">Desculpe, mas não encontramos a página buscada... tente navegar pelo menu acima.</p>
+                <p class="mb-5 text-center">Ou confira os lindos produtos que separamos para te mostrar! =)</p>
             </article>
         </div>
         <section id="catMaisVendidos" class="row px-3 px-md-0 mb-5">

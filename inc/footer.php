@@ -63,7 +63,12 @@
             </div>
             <div class="modal-body">
               <form action="" method="post" id="formCadastro">
-                <div class="form-group">
+              <div class="form-group">
+                  <label for="nomeCadastro">Nome Completo</label>
+                  <input type="text" class="form-control" id="nomeCadastro" aria-describedby="nomeCadastroHelp" placeholder="Insira seu nome">
+                  <small id="nomeCadastroHelp" class="form-text text-muted">Insira seu nome completo, por favor.</small>
+                </div>  
+              <div class="form-group">
                   <label for="emailCadastro">email</label>
                   <input type="email" class="form-control" id="emailCadastro" aria-describedby="emailCadastroHelp" placeholder="Insira seu email">
                   <small id="emailCadastroHelp" class="form-text text-muted">Não se preocupe, não vendemos mailing lists.</small>

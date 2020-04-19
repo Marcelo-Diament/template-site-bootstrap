@@ -293,7 +293,10 @@ i.fa-phone {
     background-color: #e5873c;
     background-image: url(../img/banner-01.jpg);
 }
-
+#carrinhoForm > p {
+    font-size: 1.5em;
+    font-weight: bold;
+}
 .cart-qtd {
     font-size: .85em;
 }
@@ -326,6 +329,11 @@ i.fa-phone {
     font-size: .85em;
 }
 
+/* Pagamento Confirmado */
+#topoPagamentoConfirmado {
+    background-color: #e5873c;
+    background-image: url(../img/banner-01.jpg);
+}
 #pagamentoConfirmado .fa-gifts {
     font-size: 6em;
 }
@@ -334,6 +342,18 @@ i.fa-phone {
     font-weight: bold;
 }
 
+/* 404 */
+#topoErro {
+    background-color: #e5873c;
+    background-image: url(../img/banner-01.jpg);
+}
+#erro404 p {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+#erro404 .fa-bug {
+    font-size: 6em;
+}
 /* Footer */
 footer .redes-sociais i {
     font-size: 1.5em;
@@ -353,7 +373,8 @@ footer .redes-sociais i {
         /* Aplicando altura ao topo da página (em telas com largura a partir de 576px) */
     }
 
-    #formularioPagamento .sticky-top {
+    #formularioPagamento .sticky-top,
+    #dadosPedido .sticky-top {
         top: 80px;
     }
 }
