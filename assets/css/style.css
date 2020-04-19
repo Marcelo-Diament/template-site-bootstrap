@@ -341,7 +341,11 @@ i.fa-phone {
     font-size: 1.5em;
     font-weight: bold;
 }
-
+/* Sobre */
+#topoSobre {
+    background-color: #e5873c;
+    background-image: url(../img/banner-01.jpg);
+}
 /* 404 */
 #topoErro {
     background-color: #e5873c;

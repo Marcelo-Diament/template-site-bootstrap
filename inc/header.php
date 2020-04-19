@@ -13,14 +13,17 @@
                     <li class="nav-item">
                         <a class="nav-link" href="./index.php">Início <span class="sr-only">(current)</span></a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./sobre.php">Sobre</a>
+                    </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Categorias
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="./categoria.php">Exemplo</a>
-                            <a class="dropdown-item" href="./categoria.php">Exemplo</a>
-                            <a class="dropdown-item" href="./categoria.php">Exemplo</a>
+                            <a class="dropdown-item" href="./categoria.php">Objetos</a>
+                            <a class="dropdown-item" href="./categoria.php">Coisas</a>
+                            <a class="dropdown-item" href="./categoria.php">Decoração</a>
                         </div>
                     </li>
                     <li class="nav-item">
