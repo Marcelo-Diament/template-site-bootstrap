@@ -14,8 +14,8 @@
 main {
     padding: 0 !important;
     /* Por padrão o Bootstrap põe 15 px de padding na tag main, por isso estamos garantindo que padding será 0 (por causa do carrossel) */
-    margin-top: 59px;
-    /* A altura do header é 59 px, por isso estamos aplicando o margin top na tag main */
+    margin-top: 55px;
+    /* A altura do header é 55 px, por isso estamos aplicando o margin top na tag main */
 }
 
 ul {

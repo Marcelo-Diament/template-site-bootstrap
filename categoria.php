@@ -2,7 +2,7 @@
 <?php require_once("./inc/header.php"); ?>
 <main class="container-fluid">
     <header class="topo-pagina p-3 mb-5" id="topoCatExemplo">
-        <h1 class="p-3">Categoria Exemplo</h1>
+        <h1 class="p-3">Categoria</h1>
         <p class="px-3 pt-0 topo">Produtos pertencentes à categoria Exemplo, confira as promoções e produtos de primeira qualidade!</p>
     </header>
     <section class="container">
