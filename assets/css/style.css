@@ -326,6 +326,14 @@ i.fa-phone {
     font-size: .85em;
 }
 
+#pagamentoConfirmado .fa-gifts {
+    font-size: 6em;
+}
+#pagamentoConfirmado p {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
 /* Footer */
 footer .redes-sociais i {
     font-size: 1.5em;
